@@ -1,0 +1,43 @@
+a{
+    text-decoration: none;
+}
+
+
+.btnAll {
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+    color: #ff4957;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid #ff4957;
+    margin: 20px auto;
+  }
+
+.btnsHome {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+.btonCategory{
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+    color: #26baee;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid #26baee;
+    margin: 20px;
+}
+
+.subTitle{
+color: #999999;
+}
+

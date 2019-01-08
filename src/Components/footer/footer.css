@@ -1,0 +1,27 @@
+.menuFooter{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.logoBlack{
+text-align: center;
+}
+
+.company{
+    width: 30%;
+    margin-left: 200px;
+}
+.categories{
+    width: 30%;
+}
+
+.socialIcon{
+    margin:10px;
+    color: black;
+    background: white;
+}
+
+.titleFooter{
+    color: #F44336;
+}
