@@ -7,21 +7,23 @@ const Footer = () => {
 
     return (
         <footer className='containerFooter'>
+            <hr />
             <div className='logoBlack'>
                 <Link to={'/'}> <img src={logoBlack} alt='logo imagen' /></Link>
             </div>
+            <hr className='brFooter' />
             <div className='menuFooter'>
                 <div className="company">
                     <h2 className='titleFooter'>Company</h2>
-                    <h3><Link to="/about">About</Link></h3>
-                    <h3><Link to="/Press">Press</Link></h3>
-                    <h3><Link to="/terms">Terms+Conditions</Link></h3>
+                    <h3 className='subFooter'><Link to="/about">About</Link></h3>
+                    <h3 className='subFooter'><Link to="/">Press</Link></h3>
+                    <h3 className='subFooter'><Link to="/terms">Terms+Conditions</Link></h3>
                 </div>
                 <div className="categories">
                     <h2 className='titleFooter'>Categories</h2>
-                    <h3><Link to="/category/Seating">Seating</Link></h3>
-                    <h3><Link to="/category/Tables">Tables</Link></h3>
-                    <h3><Link to="/category/Misc">Misc</Link></h3>
+                    <h3 className='subFooter'><Link to="/category/seating">Seating</Link></h3>
+                    <h3 className='subFooter'><Link to="/category/tables">Tables</Link></h3>
+                    <h3 className='subFooter'><Link to="/category/miscellaneous">Misc</Link></h3>
                 </div>
                 <div className='social'>
                     <h2 className='titleFooter'>Social</h2>

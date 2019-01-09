@@ -6,32 +6,34 @@
 
 .menuNav {
     display: flex;
-    justify-content: space-between;
-    margin-top: 0rem;
+    /* margin-top: 0rem; */
     align-items: center;
 }
 .menuNav a {
+    margin: 0 7px 0 7px;
     text-align: center;
     color: white;
     text-decoration: none;
     text-transform: uppercase;
 }
 .menuNav a.activo {
-    color: #2196f3;
+    color: #fff;
 }
 
 .fa-shopping-cart{
 font-size: 35px;
+color: #222222;
 }
 
 .addCarts{
     background-color: #FFC107;
-    height: 70px;
+    height: 64px;
+    width: 50px;
 }
 .addCarts span {
-    position: absolute;
-    top: 11px;
-    right: 5px;
+    position: relative;
+    top: 10px;
+    left: 10px;
     background-color: red;
     color: #fff;
     font-size: 11px;
@@ -40,4 +42,8 @@ font-size: 35px;
     height: 15px;
     border-radius: 50%;
     display: inline-block;
+}
+
+a.navBlue {
+color: #2196f3
 }

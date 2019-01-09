@@ -1,43 +1,33 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import './category.css'
+import './all.css'
 import { Link } from 'react-router-dom';
 
-export default class Category extends Component {
-    constructor(props) {
+export default class All extends Component {
+    constructor() {
         super();
         this.state = {
             products: [],
             product: []
         };
-        this.componentCategory(props.match.params.categoryType)
-    }
-
-    componentWillReceiveProps(newProps) {
-        this.setState({
-            products: [],
-            product: []
-        })
-        this.componentCategory(newProps.match.params.categoryType)
-        return this.state
     }
 
 
-    componentCategory = (category) => {
-        var key = 0;
-        axios.get(`https://mallory-furniture-admin.now.sh/api/v1/products?category=${category.toLowerCase()}`)
+    getProducts() {
+        axios.get(`https://mallory-furniture-admin.now.sh/api/v1/products`)
             .then(response => {
-
                 this.setState({
                     products: response.data,
                     product: response.data
 
                 })
-            })
 
+            })
     }
 
-
+    componentDidMount() {
+        this.getProducts();
+    }
 
     filterStatus = (e) => {
         var oneInfo = e.currentTarget.textContent.split(' ')
@@ -62,14 +52,12 @@ export default class Category extends Component {
         }
 
     }
+
     render() {
-
         return (
-            <article>
-                <section id={`${this.props.match.params.categoryType}Banner`} className="catBanner"></section>
-
-                <h2 className='title'>{this.props.match.params.categoryType}</h2>
-                <span className='subTitle'>All {this.props.match.params.categoryType} products</span>
+            <article className="allContainer">
+                <h2 className='allTitle'>All products</h2>
+                <p className='subAllTitle'>All available listings</p>
                 <div className='infoAll'>
                     <div className='btnCategory'>
                         <button className='btnAlls' onClick={this.filterStatus}>All Items</button>
@@ -97,6 +85,7 @@ export default class Category extends Component {
 
                     }
                 </ul>
+
             </article>
         );
     }

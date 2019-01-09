@@ -1,0 +1,33 @@
+.catBanner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+}
+
+#seatingBanner {
+    background-image: url('../images/category-seating.png');
+  }
+  
+  #desksBanner {
+    background-image: url('../images/category-desks.png');
+  }
+  
+  #tablesBanner {
+    background-image: url('../images/category-tables.png');
+  }
+  
+  #storageBanner {
+    background-image: url('../images/category-storage.png');
+  }
+  
+  #bedroomBanner {
+    background-image: url('../images/category-bedroom.png');
+  }
+  
+  #miscellaneousBanner {
+    background-image: url('../images/category-miscellaneous.png');
+  }

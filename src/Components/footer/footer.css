@@ -25,3 +25,16 @@ text-align: center;
 .titleFooter{
     color: #F44336;
 }
+
+.brFooter{
+    color: #999999;
+    width: 50px;
+    margin-bottom: 40px;
+}
+hr{
+    color: #999999; 
+}
+
+.subFooter a{
+    color: #222222;
+}

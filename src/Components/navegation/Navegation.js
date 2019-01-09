@@ -8,19 +8,19 @@ const Navegation = () => {
     return (
         <nav className='navegacion'>
             <div className='menuNav'>
-                <Link to={'/'}> <img src={logoWhite} alt='logo imagen' /></Link>
+                <Link to='/'> <img src={logoWhite} alt='logo imagen' /></Link>
                 <Link to="/about">About</Link>
                 <Link to="/terms">Terms+Conditions</Link>
                 <NavLink to={'null'} activeClassName='activo'>|</NavLink>
-                <NavLink to={'/all-products'} activeClassName='activo'>All</NavLink>
-                <NavLink to={'/category/Seating'} activeClassName='activo'>Seating</NavLink>
-                <NavLink to={'/category/Tables'} activeClassName='activo'>Tables</NavLink>
-                <NavLink to={'/category/Desks'} activeClassName='activo'>Desks</NavLink>
-                <NavLink to={'/category/Storage'} activeClassName='activo'>Storage</NavLink>
-                <NavLink to={'/category/Bedroom'} activeClassName='activo'>Bedroom</NavLink>
-                <NavLink to={'/category/Misc'} activeClassName='activo'>Misc</NavLink>
+                <NavLink className='navBlue' to={'/all-products'} activeClassName='activo'>All</NavLink>
+                <NavLink className='navBlue' to={'/category/seating'} activeClassName='activo'>Seating</NavLink>
+                <NavLink className='navBlue' to={'/category/tables'} activeClassName='activo'>Tables</NavLink>
+                <NavLink className='navBlue' to={'/category/desks'} activeClassName='activo'>Desks</NavLink>
+                <NavLink className='navBlue' to={'/category/storage'} activeClassName='activo'>Storage</NavLink>
+                <NavLink className='navBlue' to={'/category/bedroom'} activeClassName='activo'>Bedroom</NavLink>
+                <NavLink className='navBlue' to={'/category/miscellaneous'} activeClassName='activo'>Misc</NavLink>
                 <NavLink to={'null'} activeClassName='activo'>|</NavLink>
-                <button className='addCarts'><Link to="#"><span>0</span><i class="fa fa-shopping-cart" aria-hidden="true"></i></Link></button>
+                <button className='addCarts' ><Link to="#"><span>0</span><i class="fa fa-shopping-cart" aria-hidden="true"></i></Link></button>
             </div>
         </nav>
     )
