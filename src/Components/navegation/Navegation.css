@@ -28,12 +28,13 @@ color: #222222;
 .addCarts{
     background-color: #FFC107;
     height: 64px;
-    width: 50px;
+    width: 38px;
+
 }
 .addCarts span {
     position: relative;
     top: 10px;
-    left: 10px;
+    left: 17px;
     background-color: red;
     color: #fff;
     font-size: 11px;

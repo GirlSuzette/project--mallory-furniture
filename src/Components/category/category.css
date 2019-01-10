@@ -8,26 +8,26 @@
     background-size: cover;
 }
 
-#seatingBanner {
+#SeatingBanner {
     background-image: url('../images/category-seating.png');
   }
   
-  #desksBanner {
+  #DesksBanner {
     background-image: url('../images/category-desks.png');
   }
   
-  #tablesBanner {
+  #TablesBanner {
     background-image: url('../images/category-tables.png');
   }
   
-  #storageBanner {
+  #StorageBanner {
     background-image: url('../images/category-storage.png');
   }
   
-  #bedroomBanner {
+  #BedroomBanner {
     background-image: url('../images/category-bedroom.png');
   }
   
-  #miscellaneousBanner {
+  #MiscellaneousBanner {
     background-image: url('../images/category-miscellaneous.png');
   }

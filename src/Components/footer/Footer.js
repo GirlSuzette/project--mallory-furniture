@@ -21,9 +21,9 @@ const Footer = () => {
                 </div>
                 <div className="categories">
                     <h2 className='titleFooter'>Categories</h2>
-                    <h3 className='subFooter'><Link to="/category/seating">Seating</Link></h3>
-                    <h3 className='subFooter'><Link to="/category/tables">Tables</Link></h3>
-                    <h3 className='subFooter'><Link to="/category/miscellaneous">Misc</Link></h3>
+                    <h3 className='subFooter'><Link to="/category/Seating">Seating</Link></h3>
+                    <h3 className='subFooter'><Link to="/category/Tables">Tables</Link></h3>
+                    <h3 className='subFooter'><Link to="/category/Miscellaneous">Misc</Link></h3>
                 </div>
                 <div className='social'>
                     <h2 className='titleFooter'>Social</h2>

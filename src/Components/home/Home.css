@@ -39,10 +39,12 @@ a{
 
 .subTitle{
 color: #999999;
-padding-left: 7px;
+margin-left: 20px;
 }
 .title{
-  padding-left: 7px;
+  margin-left: 20px;
+  margin-bottom: 8px;
+  font-family: 'Playfair Display';
 }
 /* style products */
 
@@ -69,7 +71,7 @@ padding-left: 7px;
     padding: 6px;
     margin-bottom: -2px;
     margin-top: 30px;
-    position: relative;
+   
   }
 
   .product__name {
@@ -87,7 +89,6 @@ padding-left: 7px;
   }
   
   .descProduc{
-    position: absolute;
     bottom: 5px;
     left: 5px;
   }

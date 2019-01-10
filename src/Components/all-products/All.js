@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './all.css'
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 export default class All extends Component {
     constructor() {
         super();
         this.state = {
             products: [],
-            product: []
+            product: [],
+            showColor: false
         };
     }
 
@@ -30,6 +31,9 @@ export default class All extends Component {
     }
 
     filterStatus = (e) => {
+        this.setState({
+            showColor: true
+        })
         var oneInfo = e.currentTarget.textContent.split(' ')
         var newInfo = oneInfo[0].toLowerCase();
         var newString = [...newInfo, oneInfo[1]]
@@ -47,7 +51,8 @@ export default class All extends Component {
                 products: []
             });
             this.setState({
-                products: original
+                products: original,
+                showColor: false
             })
         }
 
@@ -60,8 +65,8 @@ export default class All extends Component {
                 <p className='subAllTitle'>All available listings</p>
                 <div className='infoAll'>
                     <div className='btnCategory'>
-                        <button className='btnAlls' onClick={this.filterStatus}>All Items</button>
-                        <button className='btnOn' onClick={this.filterStatus}>On Sale</button>
+                        <button className={(!this.state.showColor) ? 'btnAlls is-visibles' : 'btnAlls'} onClick={this.filterStatus}>All Items</button>
+                        <button className={(this.state.showColor) ? 'btnOn is-visibles' : 'btnOn'} onClick={this.filterStatus}>On Sale</button>
                     </div>
                     <p className="counterTitle"><strong className='total'>{this.state.products.length} </strong>items showing</p>
                 </div>

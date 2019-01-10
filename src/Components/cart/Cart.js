@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './cart.css'
 
 export default class Cart extends Component {
     handleRemove = (product) => {
@@ -7,7 +8,7 @@ export default class Cart extends Component {
     };
 
     calculateTotal() {
-        const prices = this.props.carts.map(p => p.prices.regular);
+        const prices = this.props.carts.map(p => p.price);
         return prices.reduce((a, b) => a + b, 0).toFixed(2);
     }
 
@@ -37,8 +38,7 @@ export default class Cart extends Component {
                                             <div>
                                                 <div className="Grid Grid--expanded">
                                                     <div>
-                                                        <h3>{cart.names.title}</h3>
-                                                        <span>{cart.descriptions.short}</span>
+                                                        <h3>{cart.item}</h3>
                                                     </div>
                                                     <div>
                                                         <button onClick={() => this.handleRemove(cart._id)}><i className="fa fa-trash" /></button>
@@ -47,9 +47,9 @@ export default class Cart extends Component {
                                             </div>
                                             <div className="Grid Grid--expanded Grid--center Item--ts">
                                                 <select>
-                                                    <option>1</option>
+                                                    <option>{this.props.length}</option>
                                                 </select>
-                                                <p>$ {cart.prices}</p>
+                                                <p>$ {cart.price}</p>
                                             </div>
                                         </div>
                                     </li>

@@ -11,6 +11,12 @@ export default class Product extends Component {
         };
     }
 
+    handleClickBtnAdd = (product) => {
+        const { addCars } = this.props;
+        addCars(product);
+    };
+
+
     getProducts() {
         axios.get(`https://mallory-furniture-admin.now.sh/api/v1/products/${this.state._id}`)
             .then(response => {
@@ -34,7 +40,7 @@ export default class Product extends Component {
                     <div className='infoProduct'>
                         <div className='desc'>
                             <p className='descItem'>{this.state.products.item}</p>
-                            <p className='descPrice'>{this.state.products.price}</p>
+                            <p className='descPrice'> $ {this.state.products.price}.00</p>
                         </div>
                         <div className='descProd'>
                             <div className='descProd1'>
@@ -45,7 +51,7 @@ export default class Product extends Component {
                                 <p>Measuarements:</p>
                                 <p>W: {this.state.products.width} L:{this.state.products.length} H:{this.state.products.height}</p>
                             </div>
-                            <button className="addToCart" onClick={this.addToCart}><strong>Add To Cart</strong></button>
+                            <button className="addToCart" onClick={() => this.props.addCars(this.state.products)}><strong>Add To Cart</strong></button>
                         </div>
                     </div>
                     <div>
