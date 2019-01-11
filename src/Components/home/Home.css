@@ -103,3 +103,24 @@ margin-left: 20px;
   }
 
   
+@media screen and (max-width: 420px) {
+  .products{
+   display: block;
+  }
+
+  .product {
+    width: 95%;
+    height: 374px;
+}
+
+.subTitle{
+  color: #999999;
+  margin-left: 20px;
+  font-size: 14px;
+  }
+  .title{
+    margin-left: 20px;
+    margin-bottom: 8px;
+    font-family: 'Playfair Display';
+  }
+ }

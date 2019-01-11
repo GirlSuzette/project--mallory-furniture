@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './all.css'
-import { NavLink, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default class All extends Component {
     constructor() {
@@ -82,7 +82,6 @@ export default class All extends Component {
                                         <p className='product__name'>{product.item}</p>
                                         <p className='product__price'>$ {product.price}</p>
                                     </div>
-
                                 </Link>
                             </li>
                         )

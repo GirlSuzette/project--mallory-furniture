@@ -21,8 +21,9 @@
 }
 
 .fa-shopping-cart{
-font-size: 35px;
-color: #222222;
+    text-align: center;
+    font-size: 35px;
+    color: #222222;
 }
 
 .addCarts{
@@ -48,3 +49,32 @@ color: #222222;
 a.navBlue {
 color: #2196f3
 }
+
+
+@media screen and (max-width: 420px) {
+    .menuNav a{
+        display: block;
+       text-align: center;
+    }
+
+    .menuNav {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .addCarts{
+        display: inline-block;
+        background-color: #FFC107;
+        height: 66px;
+        width: 38px;
+    }
+   
+    .navegacion{
+        text-align: center;
+        display: inline-block;
+        height: auto;
+        
+
+    }
+  
+   }

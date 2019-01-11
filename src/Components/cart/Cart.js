@@ -7,9 +7,16 @@ export default class Cart extends Component {
         removeProducts(product);
     };
 
+    uniqueProduct = (products) => {
+        var filters = products.filter((product, index) => {
+            return products.indexOf(product) === index
+        })
+        return filters
+    }
+
     calculateTotal() {
         const prices = this.props.carts.map(p => p.price);
-        return prices.reduce((a, b) => a + b, 0).toFixed(2);
+        return prices.reduce((a, b) => a + b, 0);
     }
 
     render() {
@@ -27,7 +34,8 @@ export default class Cart extends Component {
                         </div>
                     </header>
                     <div>
-                        {this.props.carts.map(cart => {
+                        {this.uniqueProduct(this.props.carts).map(cart => {
+                            console.log(cart);
                             return (
                                 <ul className="ShoppingCart__list">
                                     <li className="Grid Item">
@@ -47,9 +55,16 @@ export default class Cart extends Component {
                                             </div>
                                             <div className="Grid Grid--expanded Grid--center Item--ts">
                                                 <select>
-                                                    <option>{this.props.length}</option>
+                                                    <option>{cart.counter}</option>
                                                 </select>
-                                                <p>$ {cart.price}</p>
+                                                <div>
+                                                    <strong>Price</strong>
+                                                    <p>$ {cart.price}.00</p>
+                                                </div>
+                                                <div>
+                                                    <strong>Total</strong>
+                                                    <p>$ {cart.price * cart.counter}.00</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </li>
@@ -60,7 +75,7 @@ export default class Cart extends Component {
                         <footer>
                             <div className="Grid Grid--expanded">
                                 <span>Subtotal:</span>
-                                <strong>$ {this.calculateTotal()}</strong>
+                                <strong>$ {this.calculateTotal()}.00</strong>
                             </div>
                             <button>Checkout</button>
                         </footer>

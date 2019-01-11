@@ -23,7 +23,8 @@ class App extends Component {
       newProducts: [],
       carts: [],
       show: false,
-      error: false
+      error: false,
+      quantity: 0
     };
   }
 
@@ -58,18 +59,17 @@ class App extends Component {
 
 
   addCars = (product) => {
-    var newProduct = this.state.products
+    var quantity = this.state.carts.filter(products => {
+      return product._id === products._id
 
-    newProduct.filter(cart => {
-      console.log(product._id.indexOf(cart._id));
-      if (product._id.indexOf(cart._id) !== -1) {
-        this.setState({
-          carts: [...this.state.carts, product]
-
-        })
-      }
     })
 
+    product.counter = quantity.length + 1
+
+    this.setState({
+      carts: [...this.state.carts, product]
+      // quantity: quantity.length + 1
+    })
   }
 
 
@@ -97,6 +97,7 @@ class App extends Component {
           show={this.state.show}
           handleClickShow={this.handleClickShow}
           carts={this.state.carts}
+          quantity={this.state.quantity}
         />
         <Switch>
           <Route exact path='/' render={() => (
