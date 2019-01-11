@@ -1,7 +1,7 @@
 .menuFooter{
     display: flex;
     flex-wrap: wrap;
-    
+    text-align: center;
 }
 
 .logoBlack{
@@ -9,11 +9,15 @@ text-align: center;
 }
 
 .company{
-    width: 30%;
-    margin-left: 200px;
+    width: 100%;
+   
 }
 .categories{
-    width: 30%;
+    width: 100%;
+}
+
+.social{
+    width: 100%;
 }
 
 .socialIcon{
@@ -37,4 +41,25 @@ hr{
 
 .subFooter a{
     color: #222222;
+}
+
+@media screen and (min-width: 1024px) {
+    .menuFooter{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    
+    .company{
+        width: 30%;
+        margin-left: 100px;
+    }
+    .categories{
+        width: 30%;
+    }
+
+    .social{
+        width: 30%;
+    }
+    
 }

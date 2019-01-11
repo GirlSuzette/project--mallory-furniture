@@ -6,38 +6,38 @@ import { Link } from 'react-router-dom';
 
 export default class Category extends Component {
     constructor(props) {
-        super();
+        super(props);
         this.state = {
             products: [],
             product: [],
             showColor: false
         };
-        this.componentCategory(props.match.params.categoryType)
     }
 
-    componentWillReceiveProps(newProps) {
-        this.setState({
-            products: [],
-            product: []
-        })
-        this.componentCategory(newProps.match.params.categoryType)
-        return this.state
-    }
-
-
-    componentCategory = (category) => {
-        axios.get(`https://mallory-furniture-admin.now.sh/api/v1/products?category=${category.toLowerCase()}`)
+    componentDidMount = () => {
+        const { categoryType } = this.props.match.params;
+        axios.get(`https://mallory-furniture-admin.now.sh/api/v1/products?category=${categoryType.toLowerCase()}`)
             .then(response => {
-
                 this.setState({
                     products: response.data,
                     product: response.data
 
                 })
             })
-
     }
 
+    componentDidUpdate = (newProps) => {
+        const { categoryType } = this.props.match.params;
+        if (this.props.match.params !== newProps.match.params) {
+            axios.get(`https://mallory-furniture-admin.now.sh/api/v1/products?category=${categoryType.toLowerCase()}`)
+                .then(response => {
+                    this.setState({
+                        products: response.data,
+                        product: response.data
+                    });
+                });
+        }
+    }
 
 
     filterStatus = (e) => {

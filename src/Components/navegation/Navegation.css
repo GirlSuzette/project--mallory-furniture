@@ -1,3 +1,106 @@
+.menuNav a{
+    display: block;
+    text-align: center;
+}
+
+.menuNav {
+    display: inline-block;
+    text-align: center;
+}
+
+.addCarts{
+    display: inline-block;
+    background-color: #FFC107;
+    height: 66px;
+    width: 38px;
+}
+
+.navegacion{
+    text-align: center;
+    display: inline-block;
+    height: auto;
+    
+
+}
+
+.navegacion{
+background: #222222;
+width: 100%;
+height: 70px;
+}
+
+.menuNav {
+display: flex;
+/* margin-top: 0rem; */
+align-items: center;
+}
+.menuNav a {
+margin: 0 7px 0 7px;
+text-align: center;
+color: white;
+text-decoration: none;
+text-transform: uppercase;
+}
+.menuNav a.activo {
+color: #fff;
+}
+
+.fa-shopping-cart{
+text-align: center;
+font-size: 35px;
+color: #222222;
+}
+
+.addCarts{
+background-color: #FFC107;
+height: 64px;
+width: 38px;
+
+}
+.addCarts span {
+position: relative;
+top: 10px;
+left: 17px;
+background-color: red;
+color: #fff;
+font-size: 11px;
+font-weight: 700;
+width: 15px;
+height: 15px;
+border-radius: 50%;
+display: inline-block;
+}
+
+a.navBlue {
+color: #2196f3
+}
+@media screen and (min-width: 1024px) {
+   
+    .menuNav a{
+        display: block;
+        text-align: center;
+    }
+
+    .menuNav {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .addCarts{
+        display: inline-block;
+        background-color: #FFC107;
+        height: 66px;
+        width: 38px;
+    }
+   
+    .navegacion{
+        text-align: center;
+        display: inline-block;
+        height: auto;
+        
+
+    }
+
 .navegacion{
     background: #222222;
     width: 100%;
@@ -49,32 +152,4 @@
 a.navBlue {
 color: #2196f3
 }
-
-
-@media screen and (max-width: 420px) {
-    .menuNav a{
-        display: block;
-       text-align: center;
-    }
-
-    .menuNav {
-        display: inline-block;
-        text-align: center;
-    }
-
-    .addCarts{
-        display: inline-block;
-        background-color: #FFC107;
-        height: 66px;
-        width: 38px;
-    }
-   
-    .navegacion{
-        text-align: center;
-        display: inline-block;
-        height: auto;
-        
-
-    }
-  
    }
