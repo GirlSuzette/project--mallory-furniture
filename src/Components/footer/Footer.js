@@ -32,6 +32,7 @@ const Footer = () => {
                     <a className='socialIcon' href="https://pinterest.com"><i className="fa fa-pinterest-p"></i></a>
                 </div>
             </div>
+
         </footer>
     )
 }

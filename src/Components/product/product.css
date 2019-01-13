@@ -35,14 +35,13 @@
 }
 
 .infoProduct{
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
     border: 2px solid #999999;
     box-shadow: -2px 0 5px #999999;
     border-radius: 20px;
     margin-bottom: auto;
-  
 }
-
 
 .descProd{
     width: auto;

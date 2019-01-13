@@ -1,155 +1,142 @@
 .menuNav a{
-    display: block;
-    text-align: center;
+     display: block;
+     text-align: center;
 }
 
 .menuNav {
-    display: inline-block;
-    text-align: center;
+     display: inline-block;
+     text-align: center;
 }
 
 .addCarts{
-    display: inline-block;
-    background-color: #FFC107;
-    height: 66px;
-    width: 38px;
+    display: none
 }
 
 .navegacion{
-    text-align: center;
-    display: inline-block;
-    height: auto;
-    
-
-}
-
-.navegacion{
-background: #222222;
-width: 100%;
-height: 70px;
+     text-align: center;
+     display: inline-block;
+     height: auto;
+     background: #222222;
+     width: 100%;
+     height: 70px;
 }
 
 .menuNav {
-display: flex;
-/* margin-top: 0rem; */
-align-items: center;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+}
+
+.openBtn{
+    margin: 0;
+    color: white;
+    padding: 10px;
+    background: #222222;
+    outline: none;
+    border: none
+}
+
+.openBtns{
+     background-color: #222222;
+}
+
+.fa-bars{
+     color: #fff;
+     font-size: 20px;
+     margin-right: 8px;
 }
 .menuNav a {
-margin: 0 7px 0 7px;
-text-align: center;
-color: white;
-text-decoration: none;
-text-transform: uppercase;
+     margin: 0 7px 0 7px;
+     text-align: center;
+     color: white;
+     text-decoration: none;
+     text-transform: uppercase;
 }
 .menuNav a.activo {
-color: #fff;
+     color: #fff;
 }
 
 .fa-shopping-cart{
-text-align: center;
-font-size: 35px;
-color: #222222;
+     text-align: center;
+     font-size: 35px;
+     color: #fff;
+}
+.navegacions{
+     display: none;
 }
 
-.addCarts{
-background-color: #FFC107;
-height: 64px;
-width: 38px;
-
-}
 .addCarts span {
-position: relative;
-top: 10px;
-left: 17px;
-background-color: red;
-color: #fff;
-font-size: 11px;
-font-weight: 700;
-width: 15px;
-height: 15px;
-border-radius: 50%;
-display: inline-block;
+     position: relative;
+     top: -24px;
+     left: 42px;
+     background-color: red;
+     color: #fff;
+     font-size: 11px;
+     font-weight: 700;
+     width: 15px;
+     height: 15px;
+     border-radius: 50%;
+     display: inline-block;
+}
+
+.none a{
+     display: none;
+}
+
+a.responItem {
+     width: 100%;
+}
+
+nav.navegacion {
+     height: auto;
 }
 
 a.navBlue {
-color: #2196f3
+     color: #2196f3;
 }
+
+button.openBtn {
+    display: block;
+}
+
 @media screen and (min-width: 1024px) {
    
-    .menuNav a{
-        display: block;
-        text-align: center;
+    .menuNav {
+        display: flex !important;
     }
 
-    .menuNav {
-        display: inline-block;
-        text-align: center;
+    .menuNav a.responItem {
+        width: auto;
+    }
+    
+    .rah-static.rah-static--height-zero.animete > div {
+        display: block !important;
+    }
+
+    button.openBtn {
+        display: none;
+    }
+
+    .rah-static.rah-static--height-zero.animete {
+        height: auto !important;
     }
 
     .addCarts{
         display: inline-block;
+        margin-left:5px; 
         background-color: #FFC107;
         height: 66px;
         width: 38px;
     }
-   
-    .navegacion{
-        text-align: center;
-        display: inline-block;
-        height: auto;
-        
 
+    .fa-shopping-cart{
+        color: #222222;
     }
 
-.navegacion{
-    background: #222222;
-    width: 100%;
-    height: 70px;
+    .addCarts span {
+        text-align: none;
+        top: 10px;
+        left: 17px;
+        font-size: 11px;
+    }
 }
-
-.menuNav {
-    display: flex;
-    /* margin-top: 0rem; */
-    align-items: center;
-}
-.menuNav a {
-    margin: 0 7px 0 7px;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-.menuNav a.activo {
-    color: #fff;
-}
-
-.fa-shopping-cart{
-    text-align: center;
-    font-size: 35px;
-    color: #222222;
-}
-
-.addCarts{
-    background-color: #FFC107;
-    height: 64px;
-    width: 38px;
-
-}
-.addCarts span {
-    position: relative;
-    top: 10px;
-    left: 17px;
-    background-color: red;
-    color: #fff;
-    font-size: 11px;
-    font-weight: 700;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    display: inline-block;
-}
-
-a.navBlue {
-color: #2196f3
-}
-   }

@@ -49,12 +49,12 @@ export default class Home extends Component {
                         <span className='subTitle'>Explore by furniture type</span>
 
                         <div className="btnsHome">
-                            <Link to='/category/Seating'><p className="btonCategory">Seating</p></Link>
-                            <Link to='/category/Tables'><p className="btonCategory">Tables</p></Link>
-                            <Link to='/category/Desks'><p className="btonCategory">Desks</p></Link>
-                            <Link to='/category/Bedroom'><p className="btonCategory">Bedroom</p></Link>
-                            <Link to='/category/Storage'><p className="btonCategory">Storage</p></Link>
-                            <Link to='/category/Miscellaneous'><p className="btonCategory">Misc</p></Link>
+                            <Link className='displayMovil' to='/category/Seating'><p className="btonCategory">Seating</p></Link>
+                            <Link className='displayMovil' to='/category/Tables'><p className="btonCategory">Tables</p></Link>
+                            <Link className='displayMovil' to='/category/Desks'><p className="btonCategory">Desks</p></Link>
+                            <Link className='displayMovil' to='/category/Bedroom'><p className="btonCategory">Bedroom</p></Link>
+                            <Link className='displayMovil' to='/category/Storage'><p className="btonCategory">Storage</p></Link>
+                            <Link className='displayMovil' to='/category/Miscellaneous'><p className="btonCategory">Misc</p></Link>
                         </div>
                     </section>
                 </article>

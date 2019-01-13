@@ -10,6 +10,7 @@ export default class Category extends Component {
         this.state = {
             products: [],
             product: [],
+
             showColor: false
         };
     }
@@ -68,7 +69,6 @@ export default class Category extends Component {
 
             })
         }
-
     }
     render() {
 

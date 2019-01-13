@@ -57,11 +57,13 @@ export default class Cart extends Component {
                                                 <select>
                                                     <option>{cart.counter}</option>
                                                 </select>
-                                                <div>
+                                            </div>
+                                            <div className='descPrice'>
+                                                <div className='priceCart'>
                                                     <strong>Price</strong>
                                                     <p>$ {cart.price}.00</p>
                                                 </div>
-                                                <div>
+                                                <div >
                                                     <strong>Total</strong>
                                                     <p>$ {cart.price * cart.counter}.00</p>
                                                 </div>
@@ -72,7 +74,7 @@ export default class Cart extends Component {
                             )
                         })
                         }
-                        <footer>
+                        <footer className='footerCart'>
                             <div className="Grid Grid--expanded">
                                 <span>Subtotal:</span>
                                 <strong>$ {this.calculateTotal()}.00</strong>

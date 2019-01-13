@@ -1,23 +1,28 @@
 .menuFooter{
     display: flex;
-    flex-wrap: wrap;
-    text-align: center;
+    flex-wrap: wrap; 
 }
 
 .logoBlack{
-text-align: center;
+    text-align: center;
 }
 
 .company{
     width: 100%;
+    display: none;
    
 }
 .categories{
     width: 100%;
+    display: none;
 }
 
 .social{
-    width: 100%;
+    display: block;
+    padding-bottom: 110px;
+    margin: 0 auto; 
+    text-align: center;   
+    
 }
 
 .socialIcon{
@@ -33,8 +38,9 @@ text-align: center;
 .brFooter{
     color: #999999;
     width: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
+
 hr{
     color: #999999; 
 }
@@ -43,23 +49,29 @@ hr{
     color: #222222;
 }
 
+
 @media screen and (min-width: 1024px) {
     .menuFooter{
-        display: flex;
-        flex-wrap: wrap;
-        
+        text-align: center;
     }
     
     .company{
         width: 30%;
         margin-left: 100px;
+        display: block;
     }
     .categories{
         width: 30%;
+        display: block;
     }
 
     .social{
+        display: block;
         width: 30%;
+    }
+
+    .brFooter{
+        margin-bottom: 40px;
     }
     
 }

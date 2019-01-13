@@ -11,6 +11,7 @@ import Product from './Components/product/Product';
 import Category from './Components/category/Category';
 import All from './Components/all-products/All';
 import Cart from './Components/cart/Cart';
+import MenuApp from './Components/MenuMovil/MenuMovil';
 
 
 
@@ -103,6 +104,7 @@ class App extends Component {
           <Route exact path='/' render={() => (
             <Home
               newProducts={this.state.newProducts}
+              show={this.state.show}
             />
           )} />
           <Route exact path='/about' component={About} />
@@ -117,6 +119,10 @@ class App extends Component {
           <Route path='/category/:categoryType' component={Category} />
         </Switch>
         <Footer />
+        <MenuApp
+          handleClickShow={this.handleClickShow}
+          carts={this.state.carts}
+        />
       </React.Fragment>
     );
   }

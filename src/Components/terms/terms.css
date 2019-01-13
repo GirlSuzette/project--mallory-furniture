@@ -6,4 +6,11 @@
 
 .termTitle{
     font-family: 'Playfair Display';
+    font-size: 26px;
+}
+
+@media screen and (min-width: 1024px) {
+    .termTitle{
+        font-size: 40px;
+    }
 }

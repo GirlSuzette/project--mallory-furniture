@@ -24,12 +24,12 @@ a{
   margin: 0 auto;
 }
 
+
 .btonCategory{
   text-align: center;
   cursor: pointer;
-  width: 200px;
   color: #26baee;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 700;
   padding: 10px;
   background-color: white;
@@ -64,7 +64,7 @@ margin: 0 10px;
 
 .product {
   height: 421;
-  width: 100%;
+  width: 40%;
   border: 2px solid #999999;
   box-shadow: 2px 2px 2px #999999;
   border-radius: 8px;
@@ -102,9 +102,10 @@ margin: 10px auto;
   width: 100%;
 }
 
-  
-
-
+a.displayMovil {
+  font-size: 13px;
+  width: 50%;
+}
 
 @media screen and (min-width: 1024px) {
 /* style products */
@@ -112,6 +113,26 @@ margin: 10px auto;
   .product {
     height: 421px;
     width: 30%; 
-  }  
+  }   
+
+  
+    .btnsHome {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 90%;
+      margin: 0 auto;
+    }
+    
+    a.displayMovil {
+      font-size: 13px;
+      width: 21%;
+
+    }
+  
+    .btonCategory{
+      width: 200px;  
+      font-size: 25px;
+    }
   
  }
