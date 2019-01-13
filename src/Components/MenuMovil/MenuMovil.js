@@ -25,7 +25,7 @@ export default class MenuApp extends Component {
                         <Link to={'/all-products'}>
                             <div className="OptionCell">
                                 <div className="WrappperApp">
-                                    <img src={Search} className="ImageMenuMovil" />
+                                    <img src={HomeBlue} className="ImageMenuMovil" />
                                     <p className="TextMenu">Search All Product</p>
                                 </div>
                             </div>
@@ -34,7 +34,7 @@ export default class MenuApp extends Component {
                     <div className="OptionWrap">
                         <div className="OptionCell" onClick={this.props.handleClickShow}>
                             <div className="WrappperApp">
-                                <img src={ShoppingCart} className="ImageMenuMovil" />
+                                <img src={HomeBlue} className="ImageMenuMovil" />
                                 <p className="TextMenu">Shopping Cart</p>
                                 <span>{this.props.carts.length}</span>
                             </div>
