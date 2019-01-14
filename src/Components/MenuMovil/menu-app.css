@@ -39,9 +39,9 @@
   }
 
   .WrappperApp span {
-    position: absolute;
-    top: 7px;
-    right: 39px;
+    position: relative;
+    top: -57px;
+    left: 80px;
     background-color: red;
     color: #fff;
     text-align: center;
