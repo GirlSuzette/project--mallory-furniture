@@ -30,7 +30,9 @@ export default class Navegation extends Component {
                         <i class="fa fa-bars" aria-hidden="true"></i>
                         {height === 0 ? '' : ''}
                     </button>
-                    <Link className='responItem MenuImg1' to='/'> <img src={logoWhite} alt='logo imagen' /></Link>
+                    <div>
+                        <Link className='responItem MenuImg1' to='/'> <img src={logoWhite} alt='logo imagen' /></Link>
+                    </div>
                 </div>
                 <AnimateHeight
                     duration={500}
