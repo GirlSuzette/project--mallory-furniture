@@ -3,6 +3,7 @@ import './Navegation.css';
 import { NavLink, Link } from 'react-router-dom';
 import logoWhite from '../images/mf-logo-white.svg';
 import AnimateHeight from 'react-animate-height';
+import Shopping from '../images/meter-en-el-carrito copia.svg'
 
 
 export default class Navegation extends Component {
@@ -50,7 +51,7 @@ export default class Navegation extends Component {
                             <NavLink className='navBlue responItem' to={'/category/Bedroom'} activeClassName='activo'>Bedroom</NavLink>
                             <NavLink className='navBlue responItem' to={'/category/Miscellaneous'} activeClassName='activo'>Misc</NavLink>
                             <NavLink className='responItem none' to='#' activeClassName='activo'>|</NavLink>
-                            <button className='addCarts responItem' onClick={this.props.handleClickShow}><span>{this.props.carts.length}</span><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                            <button className='addCarts responItem' onClick={this.props.handleClickShow}><span>{this.props.carts.length}</span> <img src={Shopping} className="ImageMenuMovil" /></button>
                         </div>
                     </nav>
                 </AnimateHeight>
