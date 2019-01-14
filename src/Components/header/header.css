@@ -10,9 +10,10 @@
 }
 
 .titleBanner{
-font-size: 30px;
-color: white;
-margin:0;
+    font-size: 30px;
+    color: white;
+    margin:0;
+    font-family: 'Playfair Display';
 }
 
 .subTitleBanner{

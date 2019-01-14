@@ -25,12 +25,13 @@ export default class Navegation extends Component {
         return (
 
             <div className='openBtns'>
-
-                <button onClick={this.toggle} className='openBtn'>
-                    <i class="fa fa-bars" aria-hidden="true"></i>
-                    {height === 0 ? '' : ''}
-                </button>
-
+                <div className='MenuHumger'>
+                    <button onClick={this.toggle} className='openBtn'>
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                        {height === 0 ? '' : ''}
+                    </button>
+                    <Link className='responItem MenuImg1' to='/'> <img src={logoWhite} alt='logo imagen' /></Link>
+                </div>
                 <AnimateHeight
                     duration={500}
                     height={height} // see props documentation bellow
@@ -39,7 +40,7 @@ export default class Navegation extends Component {
 
                     <nav className='navegacion'>
                         <div className='menuNav'>
-                            <Link className='responItem' to='/'> <img src={logoWhite} alt='logo imagen' /></Link>
+                            <Link className='responItem menuImg' to='/'> <img src={logoWhite} alt='logo imagen' /></Link>
                             <Link className='responItem' to="/about">About</Link>
                             <Link className='responItem' to="/terms">Terms+Conditions</Link>
                             <NavLink className='responItem center' to='#' activeClassName='activo '>|</NavLink>
@@ -50,7 +51,7 @@ export default class Navegation extends Component {
                             <NavLink className='navBlue responItem' to={'/category/Storage'} activeClassName='activo'>Storage</NavLink>
                             <NavLink className='navBlue responItem' to={'/category/Bedroom'} activeClassName='activo'>Bedroom</NavLink>
                             <NavLink className='navBlue responItem' to={'/category/Miscellaneous'} activeClassName='activo'>Misc</NavLink>
-                            <NavLink className='responItem none' to='#' activeClassName='activo'>|</NavLink>
+                            <NavLink className='responItem center' to='#' activeClassName='activo'>|</NavLink>
                             <button className='addCarts responItem' onClick={this.props.handleClickShow}><span>{this.props.carts.length}</span> <img src={Shopping} className="ImageMenuMovil" /></button>
                         </div>
                     </nav>

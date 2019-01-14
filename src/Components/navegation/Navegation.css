@@ -30,7 +30,7 @@
 .openBtn{
     margin: 0;
     color: white;
-    padding: 10px;
+    padding: 2px;
     background: #222222;
     outline: none;
     border: none
@@ -79,6 +79,10 @@
      display: inline-block;
 }
 
+a.responItem.center {
+     display: none;
+ }
+
 .none a{
      display: none;
 }
@@ -99,6 +103,15 @@ button.openBtn {
     display: block;
 }
 
+a.menuImg {
+     display: none
+}
+
+.MenuHumger{
+     display: flex;
+     padding: 10px;
+}
+
 @media screen and (min-width: 1024px) {
    
     .menuNav {
@@ -108,7 +121,21 @@ button.openBtn {
     .menuNav a.responItem {
         width: auto;
     }
-    
+
+     a.responItem.center {
+          display: block;
+     }
+
+     a.menuImg {
+          display: block;
+     }
+
+     a.MenuImg1{
+          display: none;
+     }
+     .MenuHumger{
+          display: none;
+     }
     .rah-static.rah-static--height-zero.animete > div {
         display: block !important;
     }
